@@ -6,8 +6,18 @@ export default class App {
     }
     return suma;
   }
+  convertirAString(numero) {
+    let cadena = "";
+    let i = 1;
+    while (i <= numero) {
+      cadena = cadena + "*";
+      i++;
+    }
+    return cadena;
+  }
 }
 
 let app = new App();
 
 console.log(app.factorial(5));
+console.log(app.convertirAString(5));
